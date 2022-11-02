@@ -15,11 +15,31 @@ body {
     flex-direction: column;
     height: 100vh;
 }
+img {
+    display: inline-block;
+    height: 100%;
+}
+
+/* ------------------
+    HEADER  
+------------------ */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 1.5625rem;
     height: 7.5rem;
+}
+.logo {
+    display: flex;
+    height: 100%;
+}
+.logo-title {
+    font-size: 2.625rem;
+    line-height: 7.5rem;
+}
+#play__btn {
+    padding: .3125rem 2.5rem;
 }
 
 /* ------------------
