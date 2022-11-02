@@ -3,9 +3,11 @@
 /*-----------------------
     FUNCTIONS
 -----------------------*/
-function boxCreation (howManyBox, howManyColumn) {
-     // Svuoto il contenuto prima di inserire i box per renderlo più dinamico al cambio di difficoltà
-     boxContainer.innerHTML = "";
+function boxCreation (howManyColumn) {
+    // Svuoto il contenuto prima di inserire i box per renderlo più dinamico al cambio di difficoltà
+    boxContainer.innerHTML = "";
+    // Dichiaro variabile che generi i box totaliin base alle colonne
+    let howManyBox = howManyColumn * howManyColumn;
      // Inizializzo un ciclo for per creare i miei box dinamicamente dentro il box__container
      for ( let i = 1; i <= howManyBox; i++ ){
          let boxItem = document.createElement("div");
@@ -34,22 +36,16 @@ play.addEventListener('click', function(){
     // Aggiungo variabile relativa al value delle opzioni:
     let difficulties = document.querySelector('#difficulties').value;
     // Aggiungo le condizioni del livello di difficoltà facendo comparire griglie diverse
-    if ( difficulties === "Hard" ){
-        // Svuoto il contenuto prima di inserire i box per renderlo più dinamico al cambio di difficoltà
-        boxContainer.innerHTML = "";
+    if ( difficulties === "10" ){
         // Richiamo la funzione con i parametri per la difficoltà Difficile
-       boxCreation(100, 10);
+       boxCreation(difficulties);
 
-    } else if ( difficulties === "Normal" ){
-        // Svuoto il contenuto prima di inserire i box per renderlo più dinamico al cambio di difficoltà
-        boxContainer.innerHTML = "";
+    } else if ( difficulties === "9" ){
         // Richiamo la funzione con i parametri per la difficoltà Normale
-        boxCreation(81, 9);
+        boxCreation(9);
 
     } else {
-        // Svuoto il contenuto prima di inserire i box per renderlo più dinamico al cambio di difficoltà
-        boxContainer.innerHTML = "";
         // Richiamo la funzione con i parametri per la difficoltà Facile
-        boxCreation(49, 7);
+        boxCreation(7);
     }
 })
