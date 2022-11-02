@@ -38,9 +38,16 @@ header {
     font-size: 2.625rem;
     line-height: 7.5rem;
 }
-#play__btn {
-    padding: .3125rem 2.5rem;
+.btn-choose {
+    display: flex;
+    align-items: center;
+}
+.btn {
+    padding: .1875rem 2.5rem;
     cursor: pointer;
+}
+.ml-5 {
+    margin-left: .3125rem;
 }
 
 /* ------------------
@@ -72,6 +79,24 @@ main {
     align-items: center;
     width: calc(100% / 10);
     height: calc(100% / 10);
+    border: 1px solid black;
+    cursor: pointer;
+}
+.box__item81 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    border: 1px solid black;
+    cursor: pointer;
+}
+.box__item49 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 7);
+    height: calc(100% / 7);
     border: 1px solid black;
     cursor: pointer;
 }
