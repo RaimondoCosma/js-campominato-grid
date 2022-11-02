@@ -10,6 +10,7 @@ for ( let i = 1; i <= 100; i++ ){
     boxContainer.append(boxItem);
     // Aggiungo evento click al box della cella
     boxItem.addEventListener("click", function(){
-        console.log(this.innerHTML);
+        this.classList.toggle("bg-change");
+        console.log(`Hai cliccato la casella numero: ${this.innerHTML}`);
     })
 }

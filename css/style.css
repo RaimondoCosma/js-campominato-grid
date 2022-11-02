@@ -66,6 +66,10 @@ main {
     width: calc(100% / 10);
     height: calc(100% / 10);
     border: 1px solid black;
+    cursor: pointer;
+}
+.bg-change {
+    background-color: lightblue;
 }
 
 /* ------------------
