@@ -77,28 +77,20 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.box__item10 {
     width: calc(100% / 10);
     height: calc(100% / 10);
-    border: 1px solid black;
-    cursor: pointer;
 }
-.box__item81 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.box__item9 {
     width: calc(100% / 9);
     height: calc(100% / 9);
-    border: 1px solid black;
-    cursor: pointer;
 }
-.box__item49 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.box__item7 {
     width: calc(100% / 7);
     height: calc(100% / 7);
-    border: 1px solid black;
-    cursor: pointer;
 }
 .bg-change {
     background-color: lightblue;
