@@ -40,6 +40,7 @@ header {
 }
 #play__btn {
     padding: .3125rem 2.5rem;
+    cursor: pointer;
 }
 
 /* ------------------
@@ -58,6 +59,12 @@ main {
     height: 65vh;
     border: 1px solid black;
     margin: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+.show {
+    opacity: 1 !important;
+    transition: opacity 0.5s ease-in;
 }
 .box__item {
     display: flex;

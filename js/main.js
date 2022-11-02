@@ -2,6 +2,12 @@
 
 // Dichiaro la variabile relativa al box__container
 const boxContainer = document.getElementById('box__container');
+// Dichiaro la variabile relativa al bottone play
+const play = document.getElementById('play__btn');
+// Aggiungo evento al play che mostra la griglia
+play.addEventListener('click', function(){
+    boxContainer.classList.add('show');
+})
 // Inizializzo un ciclo for per creare i miei box dinamicamente dentro il box__container
 for ( let i = 1; i <= 100; i++ ){
     let boxItem = document.createElement("div");
