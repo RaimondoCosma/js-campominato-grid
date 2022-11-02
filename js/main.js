@@ -8,4 +8,8 @@ for ( let i = 1; i <= 100; i++ ){
     boxItem.innerHTML = i;
     boxItem.classList.add('box__item');
     boxContainer.append(boxItem);
+    // Aggiungo evento click al box della cella
+    boxItem.addEventListener("click", function(){
+        console.log(this.innerHTML);
+    })
 }

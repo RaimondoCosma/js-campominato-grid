@@ -54,12 +54,15 @@ main {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    background-color: violet;
     width: 65vh;
     height: 65vh;
+    border: 1px solid black;
     margin: auto;
 }
 .box__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: calc(100% / 10);
     height: calc(100% / 10);
     border: 1px solid black;
