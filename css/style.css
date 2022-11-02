@@ -97,10 +97,11 @@ main {
 }
 
 /* ------------------
-    COMMON
+    FOOTER
 ------------------ */
 footer {
     height: 5rem;
+    padding: 0 1.5625rem;
 }
 .credit {
     line-height: 5rem;
