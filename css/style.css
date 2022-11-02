@@ -6,3 +6,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* ------------------
+    COMMON
+------------------ */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header {
+    height: 7.5rem;
+}
+main {
+    flex-grow: 1;
+    background-color: #7fffd4;
+}
+footer {
+    height: 5rem;
+}
