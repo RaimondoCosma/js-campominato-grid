@@ -34,18 +34,7 @@ const play = document.getElementById('play__btn');
 play.addEventListener('click', function(){
     boxContainer.classList.add('show');
     // Aggiungo variabile relativa al value delle opzioni:
-    let difficulties = document.querySelector('#difficulties').value;
-    // Aggiungo le condizioni del livello di difficoltà facendo comparire griglie diverse
-    if ( difficulties === "10" ){
-        // Richiamo la funzione con i parametri per la difficoltà Difficile
-       boxCreation(difficulties);
-
-    } else if ( difficulties === "9" ){
-        // Richiamo la funzione con i parametri per la difficoltà Normale
-        boxCreation(9);
-
-    } else {
-        // Richiamo la funzione con i parametri per la difficoltà Facile
-        boxCreation(7);
-    }
+    let difficulties = document.querySelector('#difficulties').value; 
+    // Impostando valore di howManyColumn = difficulties, posso richiamare direttamente difficulties dentro la funzione
+    boxCreation(difficulties);
 })
