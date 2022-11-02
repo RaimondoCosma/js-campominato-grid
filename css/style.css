@@ -16,12 +16,41 @@ body {
     height: 100vh;
 }
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 7.5rem;
 }
+
+/* ------------------
+    MAIN
+------------------ */
 main {
     flex-grow: 1;
     background-color: #7fffd4;
+    display: flex;
 }
+#box__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    background-color: violet;
+    width: 65vh;
+    height: 65vh;
+    margin: auto;
+}
+.box__item {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: 1px solid black;
+}
+
+/* ------------------
+    COMMON
+------------------ */
 footer {
     height: 5rem;
+}
+.credit {
+    line-height: 5rem;
 }
